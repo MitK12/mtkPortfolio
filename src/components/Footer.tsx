@@ -6,6 +6,7 @@ import {
   FaTwitter,
   FaEnvelope,
 } from "react-icons/fa";
+import { NavLink } from "react-router-dom";
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -35,36 +36,36 @@ const Footer = () => {
             </h4>
             <ul className="space-y-2">
               <li>
-                <a
-                  href="/"
+                <NavLink
+                  to="/"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
                   Home
-                </a>
+                </NavLink>
               </li>
               <li>
-                <a
-                  href="/about"
+                <NavLink
+                  to="/about"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
                   About
-                </a>
+                </NavLink>
               </li>
               <li>
-                <a
-                  href="/projects"
+                <NavLink
+                  to="/projects"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
                   Projects
-                </a>
+                </NavLink>
               </li>
               <li>
-                <a
-                  href="/contact"
+                <NavLink
+                  to="/contact"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
                   Contact
-                </a>
+                </NavLink>
               </li>
             </ul>
           </div>
@@ -75,8 +76,8 @@ const Footer = () => {
               Follow Me
             </h4>
             <div className="flex space-x-4">
-              <a
-                href="https://github.com/MitK12"
+              <NavLink
+                to="https://github.com/MitK12"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-white transition-colors"
@@ -89,9 +90,9 @@ const Footer = () => {
                 >
                   <FaGithub />
                 </svg>
-              </a>
-              <a
-                href="https://linkedin.com/in/mitiku-kassaw-21m16"
+              </NavLink>
+              <NavLink
+                to="https://linkedin.com/in/mitiku-kassaw-21m16"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-white transition-colors"
@@ -104,9 +105,9 @@ const Footer = () => {
                 >
                   <FaLinkedin />
                 </svg>
-              </a>
-              <a
-                href="https://twitter.com/mitiku_kas"
+              </NavLink>
+              <NavLink
+                to="https://twitter.com/mitiku_kas"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-white transition-colors"
@@ -119,9 +120,9 @@ const Footer = () => {
                 >
                   <FaTwitter />
                 </svg>
-              </a>
-              <a
-                href="https://facebook.com/Mitiku.Ethiopic"
+              </NavLink>
+              <NavLink
+                to="https://facebook.com/Mitiku.Ethiopic"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-white transition-colors"
@@ -134,9 +135,9 @@ const Footer = () => {
                 >
                   <FaFacebook />
                 </svg>
-              </a>
-              <a
-                href="https://t.me/MKETHIO"
+              </NavLink>
+              <NavLink
+                to="https://t.me/MKETHIO"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-white transition-colors"
@@ -149,9 +150,9 @@ const Footer = () => {
                 >
                   <FaTelegram />
                 </svg>
-              </a>
-              <a
-                href="mailto:kassawmitiku@gmail.com"
+              </NavLink>
+              <NavLink
+                to="mailto:kassawmitiku@gmail.com"
                 className="text-gray-400 hover:text-white transition-colors"
                 aria-label="Email"
               >
@@ -162,7 +163,7 @@ const Footer = () => {
                 >
                   <FaEnvelope />
                 </svg>
-              </a>
+              </NavLink>
             </div>
           </div>
         </div>
