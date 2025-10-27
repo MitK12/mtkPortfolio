@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import ecommerce from "../assets/ecommerce.png";
 import educational from "../assets/educational.png";
 
@@ -83,22 +84,22 @@ const Projects = () => {
 
                 {/* Action Buttons */}
                 <div className="flex space-x-4">
-                  <a
-                    href={project.demoLink}
+                  <NavLink
+                    to={project.demoLink}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex-1 bg-blue-600 hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 text-white text-center py-2 rounded-lg font-medium transition-colors"
                   >
                     Live Demo
-                  </a>
-                  <a
-                    href={project.githubLink}
+                  </NavLink>
+                  <NavLink
+                    to={project.githubLink}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex-1 border-2 border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600 py-2 rounded-lg font-medium transition-colors text-center"
                   >
                     GitHub
-                  </a>
+                  </NavLink>
                 </div>
               </div>
             </div>
@@ -110,12 +111,12 @@ const Projects = () => {
           <p className="text-lg mb-6">
             Interested in collaborating? Let's build something amazing together.
           </p>
-          <a
-            href="/contact"
+          <NavLink
+            to="/contact"
             className="bg-blue-600 hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 text-white px-6 py-3 rounded-lg font-medium transition-colors"
           >
             Get In Touch
-          </a>
+          </NavLink>
         </section>
       </div>
     </div>
