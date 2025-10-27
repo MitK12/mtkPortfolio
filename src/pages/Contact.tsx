@@ -9,6 +9,7 @@ import {
   FaPhone,
   FaEnvelope,
 } from "react-icons/fa";
+import { NavLink } from "react-router-dom";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -175,53 +176,68 @@ const Contact = () => {
               {/* Email */}
               <div className="flex items-center space-x-2">
                 <FaEnvelope className="text-blue-600 text-2xl" />
-                <a
-                  href="mailto:kassawmitiku@gmail.com"
+                <NavLink
+                  to="mailto:kassawmitiku@gmail.com"
                   className="text-blue-600 hover:underline text-2xl"
                 >
                   kassawmitiku@gmail.com
-                </a>
+                </NavLink>
               </div>
             </div>
 
-            <h3 className="text-xl font-semibold mb-4">Follow Me</h3>
+            <h3 className="text-xl font-semibold mb-4">Connect Me</h3>
             <div className="flex space-x-4 text-2xl">
-              <a
-                href="https://github.com/MitK12"
+              <NavLink
+                to="https://github.com/MitK12"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <FaGithub className="h-14 w-14 text-[#d8eb08] " />
-              </a>
-              <a
-                href="https://linkedin.com/in/mitiku-kassaw-21m16"
+              </NavLink>
+              <NavLink
+                to="https://linkedin.com/in/mitiku-kassaw-21m16"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <FaLinkedin className="h-14 w-14 text-[#0076B5]" />
-              </a>
-              <a
-                href="https://twitter.com/mitiku_kas"
+              </NavLink>
+              <NavLink
+                to="https://twitter.com/mitiku_kas"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <FaTwitter className="h-14 w-14 text-[#1DA1F2] " />
-              </a>
-              <a
-                href="https://facebook.com/Mitiku.Ethiopic"
+              </NavLink>
+              <NavLink
+                to="https://facebook.com/Mitiku.Ethiopic"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <FaFacebook className="h-14 w-14 text-[#1877F2]" />
-              </a>
-              <a
-                href="https://t.me/MKETHIO"
+              </NavLink>
+              <NavLink
+                to="https://t.me/MKETHIO"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <FaTelegram className="h-14 w-14 text-[#1697d7]" />
-              </a>
+              </NavLink>
             </div>
+          </div>
+        </div>
+        {/* Map Section */}
+        <div className="mt-16">
+          <h3 className="text-2xl font-semibold mb-6 text-center">
+            Find Me in Addis Ababa
+          </h3>
+          <div className="w-full h-80 rounded-lg overflow-hidden shadow-lg">
+            <iframe
+              title="Addis Ababa Location"
+              src="https://www.openstreetmap.org/export/embed.html?bbox=38.7000%2C8.9000%2C38.9000%2C9.1000&amp;layer=mapnik&amp;marker=9.0100%2C38.7600"
+              className="w-full h-full border-0"
+              allowFullScreen
+              loading="lazy"
+            ></iframe>
           </div>
         </div>
       </div>

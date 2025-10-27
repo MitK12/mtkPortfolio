@@ -18,6 +18,7 @@ import {
   FaBriefcase,
 } from "react-icons/fa";
 import { SiExpress, SiTailwindcss } from "react-icons/si";
+import { NavLink } from "react-router-dom";
 
 import profile from "../assets/profile.png";
 const About = () => {
@@ -152,18 +153,18 @@ const About = () => {
               often draw inspiration from nature and community events.
             </p>
             <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
-              <a
-                href="/contact"
+              <NavLink
+                to="/contact"
                 className="bg-blue-600 hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 text-white px-6 py-3 rounded-lg font-medium transition-colors"
               >
                 Let's Connect
-              </a>
-              <a
-                href="/projects"
+              </NavLink>
+              <NavLink
+                to="/projects"
                 className="border-2 border-blue-600 dark:border-blue-400 text-blue-600 dark:text-blue-400 hover:bg-blue-600 hover:text-white dark:hover:bg-blue-400 dark:hover:text-gray-900 px-6 py-3 rounded-lg font-medium transition-colors"
               >
                 See My Work
-              </a>
+              </NavLink>
             </div>
           </div>
         </section>

@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { NavLink } from "react-router-dom";
 import About from "./About";
 import Contact from "./Contact";
 import Projects from "./Projects";
@@ -41,18 +42,18 @@ const Home = () => {
 
           <p className="text-lg md:text-xl mb-8 leading-relaxed">{typedText}</p>
           <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
-            <a
-              href="/projects"
+            <NavLink
+              to="/projects"
               className="bg-blue-600 hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 text-white px-6 py-3 rounded-lg font-medium transition-colors"
             >
               View My Projects
-            </a>
-            <a
-              href="/contact"
+            </NavLink>
+            <NavLink
+              to="/contact"
               className="border-2 border-blue-600 dark:border-blue-400 text-blue-600 dark:text-blue-400 hover:bg-blue-600 hover:text-white dark:hover:bg-blue-400 dark:hover:text-gray-900 px-6 py-3 rounded-lg font-medium transition-colors"
             >
               Get In Touch
-            </a>
+            </NavLink>
           </div>
         </div>
       </section>
