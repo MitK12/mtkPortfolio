@@ -11,8 +11,8 @@ const Projects = () => {
         "A full-stack e-commerce app with user authentication, product management, and payment integration using MERN stack.",
       techStack: ["MongoDB", "Express.js", "React", "Node.js", "Stripe"],
       image: ecommerce, // Replace with your project image
-      demoLink: "https://your-demo-link.com", // Replace with actual demo URL
-      githubLink: "https://github.com/MitK12/e-commerce-project",
+      //demoLink: "https://your-demo-link.com", // Replace with actual demo URL
+      //githubLink: "https://github.com/MitK12/e-commerce-project",
     },
     {
       id: 2,
@@ -21,8 +21,8 @@ const Projects = () => {
         " fully responsive educational website built with the MERN stack, featuring user authentication, course management, and real-time chat functionality.",
       techStack: ["React", "Node.js", "Express.js", "MongoDB", "Socket.io"],
       image: educational, // Replace with your project image
-      demoLink: "https://your-demo-link.com", // Replace with actual demo URL
-      githubLink: "https://github.com/yourusername/project2", // Replace with GitHub repo
+      // demoLink: "https://your-demo-link.com", // Replace with actual demo URL
+      // githubLink: "https://github.com/yourusername/project2", // Replace with GitHub repo
     },
     {
       id: 3,
@@ -31,8 +31,8 @@ const Projects = () => {
         "A MERN-based blogging site with user profiles, comments, and admin dashboard for content management.",
       techStack: ["MongoDB", "Express.js", "React", "Node.js", "JWT"],
       image: "/project3.jpg", // Replace with your project image
-      demoLink: "https://your-demo-link.com", // Replace with actual demo URL
-      githubLink: "https://github.com/yourusername/project3", // Replace with GitHub repo
+      // demoLink: "https://your-demo-link.com", // Replace with actual demo URL
+      // githubLink: "https://github.com/yourusername/project3", // Replace with GitHub repo
     },
     // Add more projects as needed
   ];
@@ -71,7 +71,7 @@ const Projects = () => {
                 </p>
 
                 {/* Tech Stack */}
-                <div className="flex flex-wrap gap-2 mb-4">
+                {/* <div className="flex flex-wrap gap-2 mb-4">
                   {project.techStack.map((tech, index) => (
                     <span
                       key={index}
@@ -80,10 +80,11 @@ const Projects = () => {
                       {tech}
                     </span>
                   ))}
-                </div>
+                </div> */}
 
                 {/* Action Buttons */}
-                <div className="flex space-x-4">
+                {/*
+               <div className="flex space-x-4">
                   <NavLink
                     to={project.demoLink}
                     target="_blank"
@@ -101,6 +102,7 @@ const Projects = () => {
                     GitHub
                   </NavLink>
                 </div>
+                */}
               </div>
             </div>
           ))}
