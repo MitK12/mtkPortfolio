@@ -6,7 +6,7 @@ It showcases my projects, skills, and experiences as a **Full-Stack Developer**,
 ---
 
 ## 🌟 Live Demo
-🔗 **Live Site:** [https://mitikuportfolio.vercel.app](https://mitikuportfolio.vercel.app)  
+🔗 **Live Site:** [https://mitikuportfolio.vercel.app](https://mtk-portfolio-puce.vercel.app)  
 🔗 **GitHub Repo:** [https://github.com/MitK12/portfolio](https://github.com/MitK12/portfolio)
 
 ---
