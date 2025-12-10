@@ -70,11 +70,13 @@ const Navbar = () => {
 
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center gap-4">
-          {["/", "/about", "/projects", "/contact"].map((path, i) => (
-            <NavLink key={i} to={path} className={linkClass}>
-              {["Home", "About", "Projects", "Contact"][i]}
-            </NavLink>
-          ))}
+          {["/", "/about", "/projects", "/services", "/contact"].map(
+            (path, i) => (
+              <NavLink key={i} to={path} className={linkClass}>
+                {["Home", "About", "Projects", "Services", "Contact"][i]}
+              </NavLink>
+            )
+          )}
 
           <button
             onClick={() => setDark(!dark)}
@@ -129,16 +131,18 @@ const Navbar = () => {
       {open && (
         <div className="md:hidden bg-gray-800 dark:bg-gray-900 px-3 pb-3 flex items-center justify-between gap-3">
           <div className="flex items-center gap-3 overflow-x-auto">
-            {["/", "/about", "/projects", "/contact"].map((path, i) => (
-              <NavLink
-                key={i}
-                to={path}
-                className={linkClass}
-                onClick={() => setOpen(false)}
-              >
-                {["Home", "About", "Projects", "Contact"][i]}
-              </NavLink>
-            ))}
+            {["/", "/about", "/projects", "/services", "/contact"].map(
+              (path, i) => (
+                <NavLink
+                  key={i}
+                  to={path}
+                  className={linkClass}
+                  onClick={() => setOpen(false)}
+                >
+                  {["Home", "About", "Projects", "Services", "Contact"][i]}
+                </NavLink>
+              )
+            )}
           </div>
 
           {/* Right-side icons: Dark mode + Download */}

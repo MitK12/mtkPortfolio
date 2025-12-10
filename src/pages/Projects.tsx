@@ -39,7 +39,7 @@ const Projects = () => {
 
   return (
     <div className="min-h-screen bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-white transition-colors duration-300 py-16 px-4">
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-7xl mx-auto">
         {/* Header */}
         <section className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">My Projects</h1>

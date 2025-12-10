@@ -5,6 +5,7 @@ import Contact from "./Contact";
 import Projects from "./Projects";
 import { FaNodeJs, FaReact } from "react-icons/fa";
 import { SiExpress, SiMongodb } from "react-icons/si";
+import Services from "./Services";
 
 const Home = () => {
   // Typewriter effect for intro
@@ -133,7 +134,8 @@ const Home = () => {
       </section>
       {/* Other Sections */}
       <About />
-      <Projects />
+      {/* <Projects /> */}
+      <Services />
       <Contact />
     </div>
   );
